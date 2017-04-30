@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery - Task 5</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body class="bg">
+	<header class="jumbotron">
+		<div class="container">
+			<div class="row row-header">
+				<div class="col-xs-12 col-sm-12">
+                    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+                    	<h1 style="color:#00cccc;">Create <img src="imgs/todo.png" class="rounded float-right" width="120px" 
+                    	alt="todo character"> List</h1>	
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                </div>
+			</div>
+		</div>
+	</header>
+	<div class="container">
+		<div class="row row-content">
+			<div class="col-xs-12 col-sm-12 col-sm-offset-3">
+				<div class="text-heading">
+					<h2>Enter your TodoList:</h2>
+				</div>
+				<form class="form-horizontal" name="todoForm">
+					<div class="form-group col-xs-12 col-sm-4">
+						<input type="text" class="form-control" 
+						placeholder="Enter your todo list text here....." id="myText" />
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<button type="button" class="btn btn-primary" id="addListBtn">Add to list</button>
+						<button type="button" class="btn btn-danger" id="removeListBtn">Remove</button>
+						<div id="alert-span1">
+							<h3 class="alert1"> Alert - Field is Empty!!</h3>
+						</div>
+						<div id="alert-span2">
+							<h3 class="alert2"> Alert - Field already Exist!!</h3>
+						</div>
+					</div>
+					
+				</form>
+			</div>
+			<div class="row row-content">
+			<div class="col-xs-12 col-sm-4 col-sm-offset-3" id="todoUl">
+				<ul class="list-group" id="todoLists">
+				</ul>
+			</div>
+		</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<blockquote class="blockquote">
+			<p class="mb-0">This task presented to eng.moustafa</p>
+		</blockquote>
+	</footer>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
